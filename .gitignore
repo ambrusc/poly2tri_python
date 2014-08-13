@@ -1,0 +1,5 @@
+Cython-*/
+build/
+setuptools_*/
+src/p2t.cpp
+*.so
