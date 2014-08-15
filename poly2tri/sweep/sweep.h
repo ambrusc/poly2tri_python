@@ -41,6 +41,9 @@
 
 #include <vector>
 
+#define _USE_MATH_DEFINES // for C++
+#include <cmath>
+
 namespace p2t {
 
 class SweepContext;
