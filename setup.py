@@ -1,6 +1,7 @@
 import os
-from setuptools import setup
+from distutils.core import setup
 from distutils.extension import Extension
+from Cython.Build import cythonize
 
 import sys
 if 'setuptools.extension' in sys.modules:
@@ -31,9 +32,8 @@ setup(
     author = "Mason Green",
     description = "A 2D constrained Delaunay triangulation library",
     long_description = read('README'),
-    url = "http://code.google.com/p/poly2tri/",
-
-    ext_modules = [mod_math],
+    url = "https://github.com/ambrusc/poly2tri_python",
+    ext_modules = cythonize([mod_math]),
     setup_requires = ["cython==0.14.1", "setuptools_cython==0.2.1"],
     install_requires = ["cython==0.14.1"],
 )
