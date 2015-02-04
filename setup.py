@@ -34,6 +34,6 @@ setup(
     long_description = read('README'),
     url = "https://github.com/ambrusc/poly2tri_python",
     ext_modules = cythonize([mod_math]),
-    setup_requires = ["cython==0.20.2"],
-    install_requires = ["cython==0.20.2"],
+    setup_requires = ["cython==0.20.1"],
+    install_requires = ["cython==0.20.1"],
 )
